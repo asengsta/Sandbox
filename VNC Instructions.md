@@ -11,6 +11,9 @@ I know you’ve all been annoyed when you are running something in a Jupyter not
 
 Chuck the lines at the end of your ./vnc/xstartup configuration file, and then run this command (tightvncserver :13 -geometry 1200x900):
 
+
+
+```
 sudo apt-get install xorg lxde-core tightvncserver firefox lxterminal xfonts-100dpi
 cat >> ~/.vnc/xstartup
   lxterminal &
@@ -18,4 +21,4 @@ cat >> ~/.vnc/xstartup
   <ctrl-d>
   tightvncserver :13 -geometry 120x900
   tightvncserver -kill :13
-  
+```
